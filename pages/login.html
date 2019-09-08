@@ -1,0 +1,31 @@
+<script src="../scripts/login.js"></script>
+
+<form name="loginForm" method='post' action="#" id="loginForm">
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDuser">Usuario:</label>
+        <div class="col-sm-6">
+            <input class="form-control" type="Text" name="usuario" id="IDuser" required placeholder="Identificador de usuario">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDpassword">Clave:</label>
+        <div class="col-sm-6">
+            <input class="form-control" type="Text" name="password" id='IDpassword' required placeholder="Clave">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <center class="col-sm-6">
+            <button class="btn" id="loginButton" type="button" disabled="disabled">Log in</button>
+        </center>
+    </div>
+    <div class="loginError alert alert-danger displayNone" role="alert">
+        <p>Clave errónea.</p>
+    </div>
+    <div class="userError alert alert-danger displayNone" role="alert">
+        <p>Usuario no registrado en base de datos.</p>
+    </div>
+    <div class="serverError alert alert-warning displayNone" role="alert">
+        <p>Error en el servidor. No se puede iniciar sesión.</p>
+    </div>
+</form>

@@ -1,0 +1,33 @@
+<script>
+    $( "#datepicker" ).datepicker({
+        inline: true
+    });
+            
+    // Hover states on the static widgets
+    $( "#dialog-link, #icons li" ).hover(
+        function() {
+            $( this ).addClass( "ui-state-hover" );
+        },
+        function() {
+            $( this ).removeClass( "ui-state-hover" );
+        }
+    );
+</script>
+
+
+<!-- Datepicker -->
+<h1>Reserva de pistas</h1>
+
+<div class="alert alert-info" role="alert">
+    Reserva de pistas próximamente.
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2" for="datepicker">Fecha:</label>
+    <div class="col-sm-6">
+        <input class="form-control" name="datepicker" id="datepicker" required placeholder="Fecha">
+    </div>
+    <div class="col-sm-4">
+        <button class="btn" id="reservationButton" type="button">Reservar</button>
+    </div>
+</div>

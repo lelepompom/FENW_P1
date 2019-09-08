@@ -1,0 +1,56 @@
+<script src="../scripts/registration.js"></script>
+
+<form name="registrationForm" method='post' action="#" id="registrationForm">
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDnewUser">Usuario:</label>
+        <div class="col-sm-6">
+            <input class="form-control" id="IDnewUser" required placeholder="Identificador de usuario">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDnewEmail">Correo:</label>
+        <div class="col-sm-6">
+            <input class="form-control" id="IDnewEmail" required placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDnewPassword">Clave:</label>
+        <div class="col-sm-6">
+            <input class="form-control" id="IDnewPassword" required placeholder="Clave">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDrepeatPassword">Repita la clave:</label>
+        <div class="col-sm-6">
+            <input class="form-control" id="IDrepeatPassword" required placeholder="Repita la clave">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-2" for="IDnewBirthday">Fecha de nacimiento:</label>
+        <div class="col-sm-6">
+            <input class="form-control" id="IDnewBirthday" placeholder="dd/mm/aaaa">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <center class="col-sm-6">
+            <button id="registrationButton" class="btn" type="button">Enviar</button>
+        </center>
+    </div>
+
+    <div class="samePasswordError alert alert-info displayNone" role="alert">
+        <p>Las claves no coinciden.</p>
+    </div>
+
+    <div class="userRegistered alert alert-success displayNone" role="alert">
+        <p>Usuario registrado.</p>
+    </div>
+
+    <div class="userDuplicated alert alert-warning displayNone" role="alert">
+        <p>Usuario duplicado, pruebe con otro.</p>
+    </div>
+
+    <div class="internalError alert alert-warning displayNone" role="alert">
+        <p>Error en el servidor, no se ha podido registrar el usuario.</p>
+    </div>
+</form>

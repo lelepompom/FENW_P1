@@ -1,0 +1,7 @@
+User-agent: *
+Crawl-Delay: 60
+Disallow: /img/
+Disallow: /css/
+Disallow: /scripts/
+Disallow: /.vscode/
+

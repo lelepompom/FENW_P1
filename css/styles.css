@@ -1,0 +1,203 @@
+/* TEXT */
+p {
+    text-align: justify;
+}
+h1, h2 {
+    color: #337ab7;
+    padding-bottom: .7em;
+}
+.container {
+    margin-bottom: 80px;
+}
+.displayNone {
+    display: none;
+}
+/* TEXT */
+
+
+/* NAVBAR */
+.navbar-brand{
+    height: 35px;
+}
+.navbar-icon {
+    margin: 8px 0 8px 1px;
+    padding: 0 15px;
+}
+.navbar-icon > img {
+    transform: rotate(60deg);
+    max-height: 30px;
+    margin-top: 4px;
+}
+.nav-item {
+    cursor: pointer;
+}
+button.navbar-toggle{
+    border-color: #337ab7;
+}
+button.navbar-toggle span{
+    background-color: #337ab7;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: white;
+}
+#ref-logout{
+    display: none;
+}
+@media (min-width: 768px) {
+    .navbar-collapse.collapse {
+        background-color: aliceblue;
+        border-bottom:1px solid #337ab7;
+    }
+}
+@media (max-width: 767px) {
+    .navbar-header {
+        background-color: aliceblue;
+        border-bottom:1px solid #337ab7;
+    }
+    .navbar-collapse.collapse {
+        border-bottom:1px solid #337ab7;
+    }
+}
+/* NAVBAR */
+
+
+/* FOOTER */
+.footer {
+    background-color: #265b89;
+    bottom: 0;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+/* FOOTER */
+
+
+/* LOADER */
+.loader {
+    animation: spin 2s linear infinite;
+    border: 10px solid aliceblue;
+    border-radius: 50%;
+    border-top: 10px solid #337ab7;
+    height: 80px;
+    width: 80px;
+    visibility: hidden;
+    /* centered position */
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    margin-left: -40px;
+    margin-top: -40px;
+    position: absolute;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* LOADER */
+
+
+/* FORM */
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+label {
+    color: #337ab7;
+    display: inline;
+}
+.form-control {
+    border-color: #337ab7; 
+}
+.btn{
+    background-color: white;
+    border-color: #337ab7;
+    color: #337ab7;
+}
+.btn:focus, .btn:hover {
+    background-color: aliceblue;
+}
+input.form-control::placeholder{
+    color: #adc9e2;
+}
+@media (max-width: 767px) {
+    #reservationButton {
+        margin-top: 1em;
+    }
+}
+/* FORM */
+
+
+/* INICIO */
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+.jumbotron-inicio {
+    background-image: url('../img/slide4.png');
+}
+
+.jumbotron-servicios {
+    background-image: url('../img/slide5.jpg');
+}
+
+.jumbotron > p, .jumbotron > h1 {
+    color: white;
+}
+
+.jumbotron > .btn {
+    background-color: #265b89;
+    color: white;
+    border-color: white;
+}
+
+.jumbotron > .btn:focus, .jumbotron > .btn:hover {
+    background-color: transparent;
+    color: #265b89;
+    border-color: #265b89;
+    font-weight: 600;
+}
+
+.column-img {
+    width: 100%;
+}
+/* INICIO */
+
+/* CAROUSEL */
+#servicios-carousel {
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    padding: 0 50px;
+}
+.carousel-control.ic-carousel {
+    background: none;
+    color: #265b89;
+    font-family: monospace;
+    padding: 10px;
+    top: 50px;
+    width: auto;
+}
+.carousel-indicators {
+    bottom: -40px;
+}
+.carousel-indicators > li {
+    border: 1px solid #adc9e2;
+    margin: 2px;
+}
+.carousel-indicators > li.active {
+    background-color: #adc9e2;
+    height: 10px;
+    margin: 2px;
+    width: 10px;
+}
+@media (min-width: 768px) {
+    #servicios-carousel {
+        margin: auto;
+        width: 70%;
+    }
+}
+/* CAROUSEL */
